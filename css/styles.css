@@ -3,5 +3,52 @@ body {
 	color: #012869;
 	font-family: 'Adamina', serif;
 	font-size: 16px;
-
 }
+
+/***** HEADER *****/
+
+#header-nav {
+	background-color: #012869;
+	border-radius: 0px;
+	border: 0;
+}
+
+.logo-img {
+	background: url('images/logo.png') no-repeat;
+	/**** This is the logo proportion  
+	width: 1;
+    height: 0.751746  *****/
+	width: 100px;
+    height: 75.1746px;
+	margin: 10px 10px 20px 20px;
+}
+.navbar-brand {
+	padding-top: 25px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.navbar-brand h1 {
+	color: white;
+	font-size: 1em;
+	text-transform: uppercase;
+	text-shadow: 1px 1px 1px #000;
+	font-weight: lighter;
+	margin-top: 0;
+	margin-bottom: 0; 
+	display: inline;
+}
+
+.navbar-brand a:hover, .navbar-brand a:focus {
+	text-decoration: none;
+}
+
+.navbar-brand > p {
+	font-size: .65em;
+	color: white;
+	font-style: italic;
+	padding-bottom: 10px;
+	text-align: center;
+}
+
+
