@@ -2,7 +2,7 @@
 body {
 	background-color: white;
 	color: #012869;
-	font-family: 'Adamina', serif;
+	font-family:'Lato', sans-serif;
 	font-size: 16px;
 }
 
@@ -38,7 +38,6 @@ body {
 	font-size: 1em;
 	text-transform: uppercase;
 	text-shadow: 1px 1px 1px #000;
-	font-weight: lighter;
 	margin-top: 0;
 	margin-bottom: 0; 
 	display: inline;
@@ -52,6 +51,7 @@ body {
 	font-size: .65em;
 	color: white;
 	font-style: italic;
+	font-weight: lighter;
 	padding-bottom: 10px;
 	text-align: center;
 }
@@ -97,12 +97,12 @@ body {
 
  /*MAIN CONTENT*/
 
-	/*JUMBOTRON*/
-#main-content.container-fluid, .jumbotron, .container-fluid .jumbotron  { 
+.jumbotron img, #main-content .jumbotron {
 	padding: 0px;
-	margin: 0px;
+	margin: 0px -15px;
 	border-radius: 0;
 	border: none;
+
 }
 
 	/*WELSOME MESSAGE*/
@@ -111,52 +111,60 @@ div#welcome {
 	background-color: white;
 	float: none;
 	clear: both;
-	margin: 0 -15px;
-	padding: 0 -15px;
+	margin: -30px -30px 20px;
+	padding-left: 10%;
+	padding-right: 10%;
 }
 
 #welcome img {
 	background: url(../images/boats.png) no-repeat;
 	width: 683px;
 	height: 198px;
-	background-size: 683px 198px;
-	margin:30px auto;
+	background-size: 683px 190px;
+	margin: 30px auto;
 	display: block;
 }
 
 #welcome h1{
-	margin: 10px 20%;
-	font-size: 2.5em;
+	margin: 10px 10%;
+	font-size: 5vw;
 	text-align: center;
+	font-weight: bold;
 }
 
 #welcome h2 {
-	font-size: 1.3em;
+	font-size: 2.5vw;
 	font-style: italic;
+	font-weight: lighter;
 	color: #113A52;
 	text-align: center;
 }
 
-p#welcome {
-	margin: 10px 20% 40px;
+#welcome p {
+	margin: 10px 5%;
 	text-align: center;
+	padding-top: 40px;
+    padding-bottom: 60px;
 }
 
-hr.welcome-line {
+.welcome-line hr {
 	width: 80%;
 	color: #012869;
 	height: 2px;
+	size: 2;
 } 
 
  /*TILES*/
 
  .location h2 {
- 	text-align: center;
- 	margin: 40px 0px;
+ 	text-align: left;
+ 	margin: 8vh 0px 4vh;
+ 	padding: 0 30px;
  	font-size: 3vw;
  	color: #fff;
  	text-shadow: 1px 2px 3px #2e2e2e;
- 	font-weight: lighter;
+ 	font-weight: thin;
+ 	text-transform: uppercase;
  }
 
 #location1-tile, #location2-tile, #location3-tile {
@@ -207,15 +215,25 @@ hr.welcome-line {
 
 /*FOOTER*/
 .panel-footer{
-	margin-top: 30px;
+	margin: 0 -15px;
+	/*margin-top: 30px;*/
 	padding-top: 35px;
 	padding-bottom: 30px;
-	background-color: #012869;
+	background-color: #222;
 	border-top: 0;
 }
 
-.panel-footer div.row{
+/*.panel-footer div.row{
 	margin-bottom: 35px;
+}*/
+
+.row {
+     margin-right: 0; 
+     margin-left: 0; 
+}
+
+.row #news, .row #subscribe, .row #hours {
+	padding: 0 30px;
 }
 
 #news > span, #subscribe > span, #hours > span {
@@ -236,7 +254,7 @@ hr.welcome-line {
 }
 
 .form-control {
-	width: 70%;
+	width: 90%;
 }
 
  /***** Responsive Framework - based on Bootstrap break points ****/
@@ -279,6 +297,15 @@ hr.welcome-line {
 
 	#nav-list a {
 		margin: 0px;
+	}
+
+	/*WELCOME*/
+
+	#welcome img {
+		background: url(../images/boats.png) no-repeat;
+		width: 500px;
+		height: 145px;
+		background-size: 500px 145px;
 	}
 
 }
@@ -336,6 +363,15 @@ hr.welcome-line {
 	    margin-bottom: 15px;
 	    font-size: 4vw;
 	 }
+
+	 /*WELCOME*/
+
+	#welcome img {
+		background: url(../images/boats.png) no-repeat;
+		width: 460px;
+		height: 134px;
+		background-size: 460px 134px;
+	}
 }
 
 
@@ -376,14 +412,33 @@ hr.welcome-line {
 	    font-size: 5vw;
 	 }
 
+/*WELCOME*/
+
+	#welcome img {
+		background: url(../images/boats.png) no-repeat;
+		width: 250px;
+		height: 72px;
+		background-size: 250px 72px;
+	}
+
+	#welcome p {
+		font-size: .8em;
+	}
+
 	/* FOOTER*/
 
 	.panel-footer {
-		margin: 0 -15px 30px;
+		margin: 0 -15px;
 		text-align: left;
 	}
 
-	.panel-footer section hr {
-		width: 80%;
+
+	.row #news, .row #subscribe, .row #hours {
+		padding: 0 10%px;
+		}
+
+	.form-control {
+    	width: 80%;
 	}
+
 }
