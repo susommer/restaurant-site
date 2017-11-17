@@ -5,31 +5,146 @@
 	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	    <meta name="viewport" content="width=device-width, initial-scale=1">
 	    <title>Old Lisbon Restaurants</title>
-	    <link rel="stylesheet" href="css/bootstrap.min.css">
+	    <link rel="stylesheet" href="css/bootstrap.css">
+	    <link rel="stylesheet" href="css/font-awesome.min.css">
 	    <link rel="stylesheet" href="css/styles.css">
 	    <link href="https://fonts.googleapis.com/css?family=Adamina" rel="stylesheet">
+
   	</head>
 	
 	<body>
 		<header>
 			<nav id="header-nav" class="navbar navbar-default">
 				<div class="container-fluid">
-					<div class="navbar-header">
-						<a href="index.html" class="media pull-left">
-							<img src="images/logo.png" alt="logo image" class="logo-img">
+					<!-- LOGO AND BRAND ON RIGHT SIDE OF NAVIGATION BAR -->
+					<div class="navbar-header">     
+						<a href="index.html" class="pull-left">
+							<div alt="logo image" id="logo-img" class="logo-img"> </div>
 						</a>
-					<div class="navbar-brand">
-						<a href="index.html"><h1>Old Lisbon Restaurants</h1></a>
-						<p>
-							<img src="">
-							<span> Serving the best Portuguese food since 1991</span>
-						</p>
-					</div>
-				</div>
-				
-			</nav>
+						<div class="navbar-brand visible-lg visible-md visible-xs">
+							<a href="index.html"><h1>Old Lisbon Restaurants</h1></a>
+							<p>
+								<img src="">
+								<span> Serving the best Portuguese food since 1991</span>
+							</p>
+						</div>
 
+						<!-- MENU BUTTON WHEN SCREEN IS SMALL -->
+						 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+					        <span class="sr-only">Toggle navigation</span> 
+					        <span class="icon-bar"></span>
+					        <span class="icon-bar"></span>
+					        <span class="icon-bar"></span>
+	      				</button>
+					</div>
+				
+							
+					<!-- MENU ON THE LEFT SIDE -->
+					<div id="collapsable-nav" class="collapse navbar-collapse">
+
+				      <ul id="nav-list" class="nav navbar-nav navbar-right">
+				        <li> <a href="#">
+				        	<span class="fa fa-cutlery" aria-hidden="true"></span><br class="hidden-xs">Menu
+				        	</a>
+				        </li> 
+				        <li> <a href="#">
+				        	<span class="fa fa-users" aria-hidden="true""></span><br class="hidden-xs">Catering
+				        	</a>
+				        </li>
+				        
+				        <li> <a href="#">
+				        	<span class="fa fa-shopping-basket" aria-hidden="true"></span><br class="hidden-xs">Market &amp; Bakery
+				        	</a>
+				        </li>
+				        
+				        <li> <a href="#">
+				        	<span class="fa fa-picture-o" aria-hidden="true"></span><br class="hidden-xs">Gallery
+				        	</a>
+				        </li>
+
+				        <li> <a href="#">
+				        	<span class="fa fa-phone" aria-hidden="true"></span><br class="hidden-xs">Contact
+				        	</a>
+				        </li>
+				      </ul>
+				    </div><!-- /.navbar-collapse -->
+
+				    <!-- MAIN CONTENT -->
+				    <div id="main-content" class="container-fluid">
+				    	
+				    	<div class="jumbotron">
+				    		<img src="images/restaurant-photo3.jpg" alt="Picture of the restaurant" class="img-responsive">
+				    	</div>
+
+				    	
+				    	<div id="welcome">
+	
+				    			<img src="images/boats.png" alt="Boats illustration" class="boats">
+					    		<h1>Welcome to Old Lisbon Restaurants</h1>
+					    		<h2>PORTUGUESE CUISINE</h2>
+					    		<hr class="welcome-line">
+					    		<p>“Old Lisbon opened its doors in January 1991 with one small location in Coral Way, Miami. Our second location opened in the city of South Miami in 2010 with a modern contrast. In September 2011, the location in Coral Way suffered a devastating fire, which destroyed most of its premises. The restaurant reopened in October 2013, with the same open kitchen and amazing dishes for which Old Lisbon is known. This time, completely remodeled and triple its original size, this location offers a friendlier family oriented atmosphere, in order to give its customers a true Portuguese gastronomic experience, the restaurant is complemented with a new Market &amp; Bakery adjacent to the main room. Now, on the 25th anniversary, Old Lisbon opened its newest location in the city of Sunny Isles. Lastly, Old Lisbon is investing significantly in its catering services by hiring qualified people, equipping itself with top-of-the line appliances, and developing various menu options to better accommodate different possible venues, private and corporate. We look forward to seeing you soon at one of our locations or serving you at your next event.”	
+					    		</p>
+				    		
+				    	</div>
+				    	
+	
+						<div id="location-tiles" class="row">
+							<div class="location"><h2>Locations</h2></div>
+							<div class="col-md-4 col-sm-6 col-xs-12">
+								<a href=""><div id="location1-tile"><span>Miami</span></div>
+								</a>
+							</div>
+
+							<div class="col-md-4 col-sm-6 col-xs-12">
+								<a href=""><div id="location2-tile"><span>South Miami</span></div>
+								</a>
+							</div>
+
+							<div class="col-md-4 col-sm-6 col-xs-12">
+								<a href=""><div id="location3-tile"><span>Sunny Isles</span></div>
+								</a>
+							</div>
+						</div> <!-- END OF LOCATION-TILES ROW -->
+				    </div> 	<!-- END OF MAIN CONTENT -->
+
+				    <footer class="panel-footer">
+				    	<div class="container-fluid">
+				    		<div class="row">
+				    			<section id="news" class="col-sm-4">
+				    				<span>News:</span><br>
+				    				<p>Post 1</p> <br>
+				    				<p>Post 2</p> <br>
+				    				<p>Post 3</p> 
+				    				<hr class="visible-xs">	
+				    			</section>
+
+				    			<section id="subscribe" class="col-sm-4">
+				    				<span>Subscribe:</span><br>
+				    				<form>
+								        <div class="form-group">
+								          <input type="text" class="form-control" placeholder="Enter your email">
+								          <button type="submit" class="btn btn-default">Join</button>
+								        </div>								        
+								      </form>
+				    				<hr class="visible-xs">	
+				    			</section>
+
+				    			<section id="hours" class="col-sm-4">
+				    				<span>Hours:</span><br>
+				    				<p>Sun - Thurs: 11AM - 10PM<br>
+				    				Fri: 11AM - 11PM<br>
+				    				Sat: 5PM - 1AM</p>
+				    				<hr class="visible-xs">	
+				    			</section>
+				   
+				    		</div> <!-- END OF ROW -->
+				    	</div> <!-- END OF FOOTER CONTAINER -->
+				    </footer>
+			  </div><!-- /.container-fluid -->
+			</nav>
 		</header>
+
 	  <!-- jQuery (Bootstrap JS plugins depend on it) -->
 	  <script src="js/jquery-2.1.4.min.js"></script>
 	  <script src="js/bootstrap.min.js"></script>

@@ -1,3 +1,4 @@
+
 body {
 	background-color: white;
 	color: #012869;
@@ -13,17 +14,21 @@ body {
 	border: 0;
 }
 
+/*LOGO AND BRAND STYLING*/
+
 .logo-img {
-	background: url('images/logo.png') no-repeat;
+	background: url('../images/logo.png') no-repeat;
 	/**** This is the logo proportion  
 	width: 1;
     height: 0.751746  *****/
-	width: 100px;
-    height: 75.1746px;
-	margin: 10px 10px 20px 20px;
+	width: 150px;
+    height: 112.7619px;
+	margin: 10px 15px 10px 0px;
+	background-size: 150px 112.7619px;
 }
+
 .navbar-brand {
-	padding-top: 25px;
+	padding-top: 50px;
 	display: inline-block;
 	vertical-align: top;
 }
@@ -39,7 +44,7 @@ body {
 	display: inline;
 }
 
-.navbar-brand a:hover, .navbar-brand a:focus {
+.navbar-brand a:hover, .navbar-brand a:focus, .navbar-brand a:link, .navbar-brand a:active {
 	text-decoration: none;
 }
 
@@ -50,5 +55,335 @@ body {
 	padding-bottom: 10px;
 	text-align: center;
 }
+/* END OF LOGO AND BRAND STYLING*/
+
+/*MAIN MENU*/
+
+#nav-list{
+	margin-top: 30px;
+}
+
+#nav-list a {
+	color: #d8d8d8;
+	text-align: center;
+	margin: 0 10px;
+}
+
+#nav-list a:hover {
+	color: #A9BAE0;
+}
+
+#nav-list a span {
+	font-size: 1.2em;
+	margin-bottom: 10px;
+}
+    
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+	background-color: transparent;
+    border-color: #fff;
+    color: #fff;
+}
+
+.navbar-header button.navbar-toggle{
+	clear: both;
+	margin-top: -40px;
+}
+
+.fa:before {
+    margin-right: 15px;
+}
+
+ /**** END OF HEADER ****/
+
+ /*MAIN CONTENT*/
+
+	/*JUMBOTRON*/
+#main-content.container-fluid, .jumbotron, .container-fluid .jumbotron  { 
+	padding: 0px;
+	margin: 0px;
+	border-radius: 0;
+	border: none;
+}
+
+	/*WELSOME MESSAGE*/
+
+div#welcome {
+	background-color: white;
+	float: none;
+	clear: both;
+	margin: 0 -15px;
+	padding: 0 -15px;
+}
+
+#welcome img {
+	background: url(../images/boats.png) no-repeat;
+	width: 683px;
+	height: 198px;
+	background-size: 683px 198px;
+	margin:30px auto;
+	display: block;
+}
+
+#welcome h1{
+	margin: 10px 20%;
+	font-size: 2.5em;
+	text-align: center;
+}
+
+#welcome h2 {
+	font-size: 1.3em;
+	font-style: italic;
+	color: #113A52;
+	text-align: center;
+}
+
+p#welcome {
+	margin: 10px 20% 40px;
+	text-align: center;
+}
+
+hr.welcome-line {
+	width: 80%;
+	color: #012869;
+	height: 2px;
+} 
+
+ /*TILES*/
+
+ .location h2 {
+ 	text-align: center;
+ 	margin: 40px 0px;
+ 	font-size: 3vw;
+ 	color: #fff;
+ 	text-shadow: 1px 2px 3px #2e2e2e;
+ 	font-weight: lighter;
+ }
+
+#location1-tile, #location2-tile, #location3-tile {
+	height:250px;
+	width: 100%;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	position: relative;
+	overflow: hidden;
+}
+
+#location1-tile:hover, #location2-tile:hover, #location3-tile:hover {
+	box-shadow: 0 1px 5px 1px #A9BAE0;
+}
+
+#location1-tile {
+	background: url('../images/miami-tile.jpg') no-repeat;
+	background-position: center;
+	background-size: 100% 250px;
+}
+
+#location2-tile {
+	background: url('../images/south-tile.jpg') no-repeat;
+	background-position: center;
+	background-size: 100% 250px;
+}
+
+#location3-tile {
+	background: url('../images/sunny-tile.jpg') no-repeat;
+	background-position: center;
+	background-size: 100% 250px;
+	margin-right: 30px;
+}
+
+#location1-tile span, #location2-tile span, #location3-tile span {
+	position: absolute;
+	top: -1px;
+	right: 0;
+	width: 100%;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 1.2em;
+	background-color: #000;
+	opacity: .8;
+}
+
+/* END OF MAIN CONTENT*/
+
+/*FOOTER*/
+.panel-footer{
+	margin-top: 30px;
+	padding-top: 35px;
+	padding-bottom: 30px;
+	background-color: #012869;
+	border-top: 0;
+}
+
+.panel-footer div.row{
+	margin-bottom: 35px;
+}
+
+#news > span, #subscribe > span, #hours > span {
+	font-size: 1.2em;
+	color: #fff;
+	line-height: 2;
+} 
+
+#news p, #hours p {
+	color: #fff;
+	font-size: .9em;
+	margin: 5px 0;
+
+}
+.form-group input{
+	margin: 10px 10px 10px 0;
+	display: inline;
+}
+
+.form-control {
+	width: 70%;
+}
+
+ /***** Responsive Framework - based on Bootstrap break points ****/
+
+ /**** Large devices only ***/
+
+@media (min-width: 1200px) {
+  
+}
+
+/**** Medium devices only ***/
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  	
+	/*LOGO AND BRAND*/
+  	.logo-img {
+  		background: url('../images/logo.png') no-repeat;
+	  	width: 100px;
+	    height: 75.1746px;
+		margin: 10px 15px 10px 0px;
+		background-size: 100px 75px;
+	}
+
+	.navbar-brand h1 {
+		font-size: .9em;
+	}
+
+	.navbar-brand > p {
+		font-size: .65em;
+	}
+
+	.navbar-brand {
+		padding-top: 20px;
+	}
+	
+	/*MAIN MENU*/
+	#nav-list {
+    	margin-top: 10px;
+	}
+
+	#nav-list a {
+		margin: 0px;
+	}
+
+}
+
+/*** Small devices only ***/
+@media (min-width: 768px)  and (max-width: 991px) {
+		
+	/*LOGO AND BRAND*/
+		.logo-img {
+  		background: url('../images/logo.png') no-repeat;
+	  	width: 100px;
+	    height: 75.1746px;
+		margin: 10px 0px 0px 0px;
+		background-size: 100px 75px;
+	}
+
+	.navbar-brand h1 {
+		font-size: .7em;
+		margin-left: 10px;
+	}
+
+	.navbar-brand > p {
+		font-size: .50em;
+		margin-left: 10px;
+		padding-top: 5px;
+		padding-bottom: 0px;
+	}
 
 
+	.navbar > .container-fluid .navbar-brand {
+    	margin-left: -25px;
+    	padding: 20px 0px 10px 0px;
+	}
+	
+	/*MAIN MENU*/
+	#nav-list {
+    	margin-top: 10px;
+	}
+
+	#nav-list a {
+		margin: 0px;
+	}
+
+	#nav-list a span {
+		font-size: .9em;
+		margin-bottom: 10px;
+	}
+
+	.location h2 {
+	 	margin: 30px 0px;
+	 	font-size: 3vw;
+	 }
+	 .location h2 {
+	 	margin-top: 40px;
+	    margin-bottom: 15px;
+	    font-size: 4vw;
+	 }
+}
+
+
+
+/**** Extra small devices only ****/
+@media (max-width: 767px) {
+	
+	/*LOGO AND BRAND*/
+	.logo-img {
+  		background: url('../images/logo.png') no-repeat;
+	  	width: 70px;
+	    height: 52.6222px;
+		margin: 10px 0px 0px 10px;
+		background-size: 70px 52.6222px;
+	}
+	.navbar-brand h1 {
+		font-size: .7em;
+		margin-left: 10px;
+	}
+
+	.navbar-brand > p {
+		font-size: .50em;
+		margin-left: 10px;
+		padding-top: 5px;
+		padding-bottom: 0px;
+	}
+
+	.navbar-brand {
+		padding: 15px 0px 10px 0px;
+	}
+	.navbar-header{
+		height:70px;
+	}
+
+	.location h2 {
+	 	margin-top: 30px;
+	    margin-bottom: 10px;
+	    font-size: 5vw;
+	 }
+
+	/* FOOTER*/
+
+	.panel-footer {
+		margin: 0 -15px 30px;
+		text-align: left;
+	}
+
+	.panel-footer section hr {
+		width: 80%;
+	}
+}
